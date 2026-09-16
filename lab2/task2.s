@@ -1,9 +1,9 @@
-# Variable Initialization
-addi x20, x0, 3         # x = 3 (Change this value to 1, 2, 3, 4, or other to test)
-addi x22, x0, 10        # b = 10 
-addi x23, x0, 4         # c = 4  
 
-# Condition Checking
+addi x20, x0, 3         
+addi x22, x0, 10        
+addi x23, x0, 4           
+
+
 addi x5, x0, 1         
 beq  x20, x5, case1    
 addi x5, x0, 2
@@ -12,7 +12,7 @@ addi x5, x0, 3
 beq  x20, x5, case3     
 addi x5, x0, 4
 beq  x20, x5, case4     
-# Cases
+
 default:
     addi x21, x0, 0     
     beq  x0, x0, Exit   
